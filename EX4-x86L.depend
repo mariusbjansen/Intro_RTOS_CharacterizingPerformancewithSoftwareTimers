@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1492347557 source:d:\amr\work\trainining material\rtos track\introduction to rtos + case study\labs\micrium-instructor\software\blocks\pc\codeblocks1.6\pc.c
+	"includes.h"
+
+1492346265 source:d:\amr\work\trainining material\rtos track\introduction to rtos + case study\labs\micrium-instructor\software\ucos-ii\ports\win32\os_cpu_c.c
+	"includes.h"
+	"os_trace.h"
+
+1117095024 d:\amr\work\trainining material\rtos track\introduction to rtos + case study\labs\micrium-instructor\software\ucos-ii\ports\win32\os_trace.h
+
+1262958832 source:d:\amr\work\trainining material\rtos track\introduction to rtos + case study\labs\micrium-instructor\software\ucos-ii\ports\win32\os_trace.c
+	"includes.h"
+	"os_trace.h"
+
+1275554062 source:d:\amr\work\trainining material\rtos track\introduction to rtos + case study\labs\micrium-instructor\software\ucos-ii\source\ucos_ii.c
+	<ucos_ii.h>
+	<os_core.c>
+	<os_flag.c>
+	<os_mbox.c>
+	<os_mem.c>
+	<os_mutex.c>
+	<os_q.c>
+	<os_sem.c>
+	<os_task.c>
+	<os_time.c>
+	<os_tmr.c>
+
