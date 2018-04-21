@@ -113,9 +113,8 @@ void TaskStart(void *pdata)
 *********************************************************************************************************
 */
 // Add your code here!!
-EventGrp = OSFlagCreate(0x0, &err);
-status = OSFlagPost(EventGrp, SlowFlags, OS_FLAG_SET, &err);
-
+   EventGrp = OSFlagCreate(0x0, &err);
+   status = OSFlagPost(EventGrp, SlowFlags, OS_FLAG_SET, &err);
 // End of your code!!
 
 /*
@@ -124,8 +123,8 @@ status = OSFlagPost(EventGrp, SlowFlags, OS_FLAG_SET, &err);
 *********************************************************************************************************
 */
 // Add your code here!!
-StatTmr = OSTmrCreate(10, 100, OS_TMR_OPT_PERIODIC, StatTmrFnct, NULL, "Start Timer", &err);
-OSTmrStart(StatTmr, &err);
+    StatTmr =OSTmrCreate(10, 100, OS_TMR_OPT_PERIODIC, StatTmrFnct, NULL, "Stat Timer", &err);
+    OSTmrStart(StatTmr, &err);
 // End of your code!!
 
     for (;;)
@@ -275,7 +274,6 @@ void TaskSpeedy(void *pdata){
     status = OSFlagPost(EventGrp, SlowFlags, OS_FLAG_SET, &err);
 // End of your code!!
 
-
        SpeedyTaskCntr++;                                                          // Increment the speedy task counter
 
        current_time = OSTimeGet();                                                // Get the finishing time for this cycle
@@ -312,6 +310,8 @@ void    TaskSlow(void * pdata)
 // Add your code here!!
     status = OSFlagPend(EventGrp, SlowFlags, OS_FLAG_WAIT_SET_ALL, 0, &err);
     status = OSFlagPost(EventGrp, SlowFlags, OS_FLAG_CLR, &err);
+
+
 // End of your code!!
 
       OSTimeDly(12);                                                              // Delay for 12 ticks
